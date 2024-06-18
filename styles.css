@@ -32,7 +32,7 @@ body {
   margin: 100px auto; /*bring div element in the middle top of the page!*/
   /* background-color: red; */
 
-  /*to separate every item(accordion) from another one with row gap of 24px*/
+  /*to separate every item(accordion) from another one with row gap of 24px => we do it here in container element(accordion) as parent, because item is child of this parent.s*/
   /* display: flex;
   flex-direction: column;
   row-gap: 24px; 
