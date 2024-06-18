@@ -106,6 +106,18 @@ body {
   flex-direction: column; this is necessary, otherwise we see the contents in a row direction! but we want to see it in columns*/
 }
 
+/*to make the green border above the opened accordion*/
+.open {
+  border-top: 5px solid #087f5b;
+}
+
+/*to make the number, text and SVG green*/
+.open .number,
+.text,
+svg {
+  color: #087f5b;
+}
+
 .hidden-box p {
   line-height: 1.6;
   margin-bottom: 24px;
