@@ -106,7 +106,7 @@ body {
 
 /*show only the content of second accordion*/
 .show-me {
-  display: grid;
+  display: grid; /*or block or inline-block => all are working!*/
   /*OR*/
   /* display: flex;
   flex-direction: column; this is necessary, otherwise we see the contents in a row direction! but we want to see it in columns*/
