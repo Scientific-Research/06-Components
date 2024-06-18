@@ -50,3 +50,22 @@ body {
 
 .hidden-box {
 }
+
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hidden-box ul {
+  color: #868e96;
+  margin-left: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.hidden-box ul li {
+  margin-bottom: 12px;
+}
+
+.hidden-box ul li:last-child {
+  margin-bottom: 0px;
+}
