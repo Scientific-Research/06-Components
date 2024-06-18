@@ -56,7 +56,8 @@ body {
   grid-template-rows: auto 1fr; /*auto: means it takes space what it needs - 1fr: means it fill up the remaining space!*/
 
   column-gap: 24px;
-  row-gap: 32px;
+  /* row-gap: 32px; */
+  row-gap: 0;
 
   align-items: center; /*to align grid items themselves vertically inside the cells*/
 
@@ -66,6 +67,11 @@ body {
 /*we can use above flex => see above*/
 .item:last-child {
   margin-bottom: 0;
+}
+
+/*the first and last item have row-gap:0 but the second item(child has row-gap:32)*/
+.item:nth-child(2) {
+  row-gap: 32px;
 }
 
 /* We can use below flexbox or CSS GRID Layout! */
