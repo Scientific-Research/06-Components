@@ -44,8 +44,10 @@ body {
   grid-template-columns: auto 1fr auto;
   grid-template-rows: auto 1fr; /*auto: means it takes space what it needs - 1fr: means it fill up the remaining space!*/
 
-  column-gap: 20px;
-  row-gap: 10px;
+  column-gap: 24px;
+  row-gap: 32px;
+
+  align-items: center; /*to align grid items themselves vertically inside the cells*/
 }
 
 /* We can use below flexbox or CSS GRID Layout! */
