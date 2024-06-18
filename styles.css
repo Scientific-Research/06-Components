@@ -23,6 +23,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #343a40;
   /* border-bottom: 8px solid #087f5b; */
+  line-height: 1; /*line-height get herited by other elements - that's why as GLOBAL RESET, we can use it here!*/
 }
 
 .accordion {
@@ -66,6 +67,9 @@ body {
   flex-direction: column;
   /*By default flex-direction is row, we have to change the direction of flex to column, otherwise, we see all li in horizontal direction side by side as a row!*/
   gap: 12px;
+  /* align-items: center; */
+  /*align the items horizontally, because flex-direction is set to column.
+  but normally as default flex-direction is row and align-items:center align the items vertically and not horizontally! */
 }
 
 /*Instead of using above flex, we can use the folowing two statements: => anyway, we get the same result!*/
