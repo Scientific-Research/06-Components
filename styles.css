@@ -92,9 +92,18 @@ body {
   stroke: #087f5b;
 }
 
+/*hide first and last accordions*/
 .hidden-box {
   grid-column: 2/3;
   display: none;
+}
+
+/*show only the content of second accordion*/
+.show-me {
+  display: grid;
+  /*OR*/
+  /* display: flex;
+  flex-direction: column; this is necessary, otherwise we see the contents in a row direction! but we want to see it in columns*/
 }
 
 .hidden-box p {
