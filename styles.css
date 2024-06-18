@@ -60,12 +60,19 @@ body {
   color: #868e96;
   margin-left: 20px;
   /* margin-bottom: 20px; */
+
+  /* Using flex or last-child below:*/
+  display: flex;
+  flex-direction: column;
+  /*By default flex-direction is row, we have to change the direction of flex to column, otherwise, we see all li in horizontal direction side by side as a row!*/
+  gap: 12px;
 }
 
-.hidden-box ul li {
+/*Instead of using above flex, we can use the folowing two statements: => anyway, we get the same result!*/
+/* .hidden-box ul li {
   margin-bottom: 12px;
 }
 
 .hidden-box ul li:last-child {
   margin-bottom: 0px;
-}
+} */
