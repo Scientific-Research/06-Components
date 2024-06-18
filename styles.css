@@ -37,7 +37,23 @@ body {
   /* horizontal offset, vertical offset, Blurr, rgba*/
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
   padding: 24px;
+
+  /* CSS GRID LAYOUT: */
+  display: grid;
+  /* auto: witdh is set automatically based on the content! */
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr; /*auto: means it takes space what it needs - 1fr: means it fill up the remaining space!*/
+
+  column-gap: 20px;
+  row-gap: 10px;
 }
+
+/* We can use below flexbox or CSS GRID Layout! */
+/* .number-text-svg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
 
 .number,
 .text {
@@ -53,6 +69,7 @@ body {
 }
 
 .hidden-box {
+  grid-column: 2/3;
 }
 
 .hidden-box p {
